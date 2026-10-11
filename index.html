@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VoxelForge 3D | Links</title>
+    <title>VoxelForge 3D | Catálogo Oficial</title>
     <style>
         * {
             margin: 0;
@@ -17,85 +17,142 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 40px 20px;
+            padding: 30px 15px;
             min-height: 100vh;
         }
         .container {
             width: 100%;
-            max-width: 480px;
+            max-width: 500px;
             text-align: center;
         }
+        .header {
+            margin-bottom: 25px;
+        }
         .logo {
-            width: 100px;
-            height: 100px;
+            width: 90px;
+            height: 90px;
             border-radius: 50%;
-            background-color: #2b2b2b;
-            margin: 0 auto 15px;
+            background-color: #1f1f1f;
+            margin: 0 auto 12px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 32px;
+            font-size: 36px;
             border: 2px solid #00ffcc;
+            box-shadow: 0 0 15px rgba(0, 255, 204, 0.2);
         }
         h1 {
             font-size: 24px;
-            margin-bottom: 5px;
+            color: #ffffff;
+            margin-bottom: 6px;
         }
-        p {
+        p.subtitle {
             color: #a0a0a0;
             font-size: 14px;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
         }
-        .links-list {
+        .category-title {
+            text-align: left;
+            font-size: 16px;
+            color: #00ffcc;
+            margin: 25px 0 12px 5px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-left: 3px solid #00ffcc;
+            padding-left: 8px;
+        }
+        .catalog-list {
             display: flex;
             flex-direction: column;
             gap: 15px;
             width: 100%;
         }
-        .link-button {
-            display: block;
+        .product-card {
             background-color: #1f1f1f;
-            color: #ffffff;
-            text-decoration: none;
-            padding: 16px 20px;
-            border-radius: 12px;
-            font-weight: 600;
-            font-size: 16px;
             border: 1px solid #333333;
-            transition: all 0.3s ease;
+            border-radius: 12px;
+            padding: 16px;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            transition: transform 0.2s ease, border-color 0.2s ease;
         }
-        .link-button:hover {
-            background-color: #00ffcc;
-            color: #121212;
+        .product-card:hover {
             border-color: #00ffcc;
             transform: translateY(-2px);
         }
+        .product-title {
+            font-size: 16px;
+            font-weight: bold;
+            color: #ffffff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .product-desc {
+            font-size: 13px;
+            color: #b0b0b0;
+            line-height: 1.4;
+        }
+        .btn-buy {
+            display: inline-block;
+            background-color: #00ffcc;
+            color: #121212;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 14px;
+            text-align: center;
+            margin-top: 5px;
+            transition: background-color 0.2s ease;
+        }
+        .btn-buy:hover {
+            background-color: #00e6b8;
+        }
+        .social-link {
+            margin-top: 30px;
+            display: block;
+            color: #a0a0a0;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .social-link:hover {
+            color: #00ffcc;
+        }
         footer {
-            margin-top: 40px;
+            margin-top: 30px;
             font-size: 12px;
-            color: #666;
+            color: #555;
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <div class="logo">🦖</div>
-        <h1>VoxelForge 3D</h1>
-        <p>Elevando o nível do seu setup com Impressão 3D</p>
-
-        <div class="links-list">
-            <!-- Botão 1: WhatsApp -->
-            <a href="https://wa.me/55159996769502" class="link-button" target="_blank">💬 Orçamentos via WhatsApp</a>
-            
-            <!-- Botão 2: Instagram / Catálogo -->
-            <a href="https://www.instagram.com/voxel_lforge3d" class="link-button" target="_blank">📂 Ver Catálogo no Instagram</a>
+        <div class="header">
+            <div class="logo">🦖</div>
+            <h1>VoxelForge 3D</h1>
+            <p class="subtitle">Catálogo de Impressão 3D — Escolha o seu e encomende pelo WhatsApp</p>
         </div>
 
-        <footer>
-            &copy; 2026 VoxelForge 3D. Todos os direitos reservados.
-        </footer>
-    </div>
+        <div class="catalog-list">
+            
+            <!-- CATEGORIA 1 -->
+            <div class="category-title">🚂 Sensoriais & Articulados</div>
 
-</body>
-</html>
+            <div class="product-card">
+                <div class="product-title">
+                    <span>Dinossauro Articulado 🦖</span>
+                </div>
+                <div class="product-desc">Totalmente articulado, leve e perfeito para decoração ou alívio de estresse. Diversas cores disponíveis.</div>
+                <a href="https://wa.me/55159996769502?text=Olá!%20Gostaria%20de%20comprar%20o%20Dinossauro%20Articulado." class="btn-buy" target="_blank">🛒 Comprar via WhatsApp</a>
+            </div>
+
+            <div class="product-card">
+                <div class="product-title">
+                    <span>Axolote Articulado 🦎</span>
+                </div>
+                <div class="product-desc">O queridinho do momento! Articulado, maleável e com design super detalhado.</div>
+                <a href="
